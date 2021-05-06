@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
+// use App\Http\Middleware\HandleInertiaRequests;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
+
+// use Inertia\Inertia;
 
 class HomeController extends Controller
 {
@@ -23,6 +27,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return Inertia::render('Home/index');
     }
 }
