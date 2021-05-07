@@ -69874,6 +69874,22 @@ module.exports = function getSideChannel() {
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var map = {
+	"./Bookmark/Add": [
+		"./resources/js/Pages/Bookmark/Add/index.tsx",
+		"resources_js_Pages_Bookmark_Add_index_tsx"
+	],
+	"./Bookmark/Add/": [
+		"./resources/js/Pages/Bookmark/Add/index.tsx",
+		"resources_js_Pages_Bookmark_Add_index_tsx"
+	],
+	"./Bookmark/Add/index": [
+		"./resources/js/Pages/Bookmark/Add/index.tsx",
+		"resources_js_Pages_Bookmark_Add_index_tsx"
+	],
+	"./Bookmark/Add/index.tsx": [
+		"./resources/js/Pages/Bookmark/Add/index.tsx",
+		"resources_js_Pages_Bookmark_Add_index_tsx"
+	],
 	"./Bookmark/List": [
 		"./resources/js/Pages/Bookmark/List/index.tsx",
 		"resources_js_Pages_Bookmark_List_index_tsx"
@@ -70061,7 +70077,7 @@ module.exports = webpackAsyncContext;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_Pages_Bookmark_List_index_tsx":1,"resources_js_Pages_Home_index_tsx":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_Pages_Bookmark_Add_index_tsx":1,"resources_js_Pages_Bookmark_List_index_tsx":1,"resources_js_Pages_Home_index_tsx":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

@@ -1,0 +1,1 @@
+(self.webpackChunk=self.webpackChunk||[]).push([[715],{9715:function(e,t,u){"use strict";var n=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(t,"__esModule",{value:!0});var l=n(u(7294));t.default=function(){return l.default.createElement("p",null,"Welcome to home page Anjay")}}}]);
