@@ -22,7 +22,7 @@ Object.defineProperty(exports, "__esModule", ({
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 
 var HomePage = function HomePage() {
-  return react_1["default"].createElement("p", null, "Welcome to home page");
+  return react_1["default"].createElement("p", null, "Welcome to home page Anjay");
 };
 
 exports.default = HomePage;
