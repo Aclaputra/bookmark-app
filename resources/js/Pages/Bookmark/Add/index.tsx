@@ -1,9 +1,7 @@
 import { Inertia } from "@inertiajs/inertia"
 import React, { useState } from "react"
 
-interface Props {}
-
-const BookmarkAddPage: React.FC<Props> = () => {
+const BookmarkAddPage: React.FC = () => {
   const [state, setstate] = useState({
     link: "",
     title: "some hardcoded title",
@@ -30,6 +28,7 @@ const BookmarkAddPage: React.FC<Props> = () => {
               type="text"
               className="form-control"
               name="link"
+              value={state.link}
               onChange={handleChange}
             />
           </div>
