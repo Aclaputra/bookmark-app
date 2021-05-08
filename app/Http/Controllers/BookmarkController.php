@@ -6,6 +6,7 @@ use App\Models\Bookmark;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Inertia\Inertia;
+use shweshi\OpenGraph\OpenGraph;
 
 
 class BookmarkController extends Controller
@@ -29,10 +30,12 @@ class BookmarkController extends Controller
     public function getPreviewData(Request $request)
     {
         $postData = $this->validate($request, [
-            'url' => ['required'],
+            'link' => ['required'],
         ]);
 
-        $data = OpenGraph::fetch($postData['url']);
+        $data = \OpenGraph::fetch($postData['link']);
+
+        // \logger($postData);
 
         return $data;
     }
