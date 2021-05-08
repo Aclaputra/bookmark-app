@@ -9,5 +9,5 @@ class Bookmark extends Model
 {
     use HasFactory;
 
-    protected $quarded = [];
+    protected $guarded = [];
 }
