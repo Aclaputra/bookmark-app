@@ -1,4 +1,4 @@
-## 🐱‍🏍— Full Stack Laravel 8 with React 17 as UI, Inertia.js and deployment to Linux
+## 🐱‍🏍— Full Stack Laravel 8 with React typescript as UI, Inertia.js and deployment to Linux
 ![](Readme_img/php_artisan_tinker.JPG)
 ## php artisan tinker
 ```shell
