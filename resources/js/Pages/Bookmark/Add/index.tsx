@@ -1,5 +1,6 @@
 import { Inertia } from "@inertiajs/inertia"
 import React, { useState } from "react"
+import Menu from "../../../components/common/nav"
 
 const BookmarkAddPage: React.FC = () => {
   const [state, setstate] = useState({
@@ -19,22 +20,27 @@ const BookmarkAddPage: React.FC = () => {
     Inertia.post("/bookmark/preview", state)
   }
   return (
-    <div className="row">
-      <div className="col-sm-8 mx-auto">
-        <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="link">Link</label>
-            <input
-              type="text"
-              className="form-control"
-              name="link"
-              value={state.link}
-              onChange={handleChange}
-            />
-          </div>
-        </form>
+    <React.Fragment>
+      <div className="mb-3">
+        <Menu />
       </div>
-    </div>
+      <div className="row">
+        <div className="col-sm-8 mx-auto">
+          <form onSubmit={handleSubmit}>
+            <div className="form-group">
+              <label htmlFor="link">Link</label>
+              <input
+                type="text"
+                className="form-control"
+                name="link"
+                value={state.link}
+                onChange={handleChange}
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </React.Fragment>
   )
 }
 
